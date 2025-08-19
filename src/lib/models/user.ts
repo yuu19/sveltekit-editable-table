@@ -1,8 +1,14 @@
 // src/lib/schemas/user.ts
 import { z } from 'zod';
-import { RoleName } from '@prisma-app/client';
 
-/** Prisma の RoleName enum をそのまま zod の enum として使う */
+/** Drizzle で使用する RoleName enum */
+export enum RoleName {
+        ADMIN = 'ADMIN',
+        EDITOR = 'EDITOR',
+        USER = 'USER'
+}
+
+/** RoleName enum をそのまま zod の enum として使う */
 export const roleNameSchema = z.nativeEnum(RoleName);
 
 /** ────────────────────────────────────────────────
