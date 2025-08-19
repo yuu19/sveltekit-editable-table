@@ -1,11 +1,8 @@
 {
 	"name": "sveltekit-admin-demo",
 	"private": true,
-	"version": "0.0.1",
-	"prisma": {
-		"seed": "node --loader ts-node/esm prisma/seed.ts"
-	},
-	"type": "module",
+        "version": "0.0.1",
+        "type": "module",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
@@ -37,9 +34,9 @@
 		"globals": "^15.14.0",
 		"prettier": "^3.4.2",
 		"prettier-plugin-svelte": "^3.3.3",
-		"prettier-plugin-tailwindcss": "^0.6.10",
-		"prisma": "6.10.1",
-		"svelte": "^5.0.0",
+                "prettier-plugin-tailwindcss": "^0.6.10",
+                "drizzle-kit": "^0.31.4",
+                "svelte": "^5.0.0",
 		"svelte-check": "^4.0.0",
 		"sveltekit-superforms": "^2.25.0",
 		"tailwind-merge": "^3.3.0",
@@ -56,10 +53,11 @@
 		"@dnd-kit-svelte/core": "^0.0.8",
 		"@dnd-kit-svelte/modifiers": "^0.0.8",
 		"@dnd-kit-svelte/sortable": "^0.0.8",
-		"@dnd-kit-svelte/utilities": "^0.0.8",
-		"@prisma/client": "6.10.1",
-		"@tanstack/table-core": "^8.21.3",
-		"@types/node": "^24.0.7",
-		"svelte-sonner": "^1.0.5"
-	}
+                "@dnd-kit-svelte/utilities": "^0.0.8",
+                "@tanstack/table-core": "^8.21.3",
+                "@types/node": "^24.0.7",
+                "better-sqlite3": "^12.2.0",
+                "drizzle-orm": "^0.44.4",
+                "svelte-sonner": "^1.0.5"
+        }
 }
